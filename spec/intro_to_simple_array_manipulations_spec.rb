@@ -27,6 +27,7 @@ describe "#using_unshift" do
   end
 end
 
+
 describe "#using_pop" do
   before(:each) do 
     @great_hits_of_the_nineties = ["Baby One More Time", "Smells Like Teen Spirit", "Missing", "Walking On The Sun", "Hard Knock Life", "Losing My Religion"]
@@ -99,6 +100,10 @@ describe "#using_concat" do
    end
 end
 
+
+
+
+
 describe "#using_insert" do 
   before(:each) do 
     @list_of_esoteric_programming_languages = ["Ante", "ArnoldC", "Befunge", "Binary lambda calculus", "Chef", "GolfScript", "Ook!"]
@@ -115,6 +120,11 @@ describe "#using_insert" do
   end
 end
 
+
+
+
+
+
 describe "#using_uniq" do 
   it "takes in an argument of an array and uses the uniq method to remove any duplicate items" do
     captain_planet_and_the_planeteers = ["Captain Planet", "Gaia", "Kwame", "Gi", "Linka", "Wheeler", "Gaia"]
@@ -122,6 +132,9 @@ describe "#using_uniq" do
     expect(new_array).to_not eq(captain_planet_and_the_planeteers)
   end
 end
+
+
+
 
 describe "#using_flatten" do 
   it "takes in an argument of an array that contains other arrays and uses the flatten method to return an array of strings" do 
@@ -132,6 +145,9 @@ describe "#using_flatten" do
 end
 
 
+
+
+
 describe "#using_delete" do 
   it "takes in two arguments, an array and a string, and uses the delete method to remove any items from the array that are equal to that string" do
     instructors = ["Josh", "Steven", "Sophie", "Steven", "Amanda", "Steven"]
@@ -139,6 +155,9 @@ describe "#using_delete" do
     expect(instructors).not_to include("Steven")
   end
 end
+
+
+
 
 describe "#using_delete_at" do 
   it "takes in two arguments, an array and an integer and deletes the element at the index of the array that is equal to that integer" do 
